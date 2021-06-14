@@ -216,7 +216,7 @@ readinessProbe:
 ingress:
   ## Set to true to enable ingress record generation
   ##
-  enabled: true
+  enabled: false
 
   ## Override API Version (automatically detected if not set)
   ##
@@ -357,7 +357,7 @@ sidecars: {}
 service:
   ## Service type
   ##
-  type: NodePort
+  type: ClusterIP
   ## HTTP Port
   ##
   port: 80
