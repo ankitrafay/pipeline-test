@@ -357,7 +357,7 @@ sidecars: {}
 service:
   ## Service type
   ##
-  type: ClusterIP
+  type: NodePort
   ## HTTP Port
   ##
   port: 80
