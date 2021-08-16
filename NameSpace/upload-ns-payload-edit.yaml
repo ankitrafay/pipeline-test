@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: ui-upload-ns-01
+  name: ram-repo
   labels:
     env: dev
     priority: high
@@ -14,7 +14,7 @@ apiVersion: v1
 kind: ResourceQuota
 metadata:
   name: object-counts
-  namespace: ui-upload-ns-01
+  namespace: ram-repo
 spec:
   hard:
     configmaps: "10"
@@ -34,7 +34,7 @@ apiVersion: "v1"
 kind: "LimitRange"
 metadata:
   name: limit-range-sample
-  namespace: ui-upload-ns-01
+  namespace: ram-repo
 spec:
   limits:
     - type: "Pod"
