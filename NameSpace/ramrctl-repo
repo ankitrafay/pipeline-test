@@ -1,0 +1,64 @@
+kind: ManagedNamespace
+apiVersion: config.rafay.dev/v2
+metadata:
+  name: ramrctl-repo
+  description: desc-01
+  labels:
+    env: dev
+    priority: high
+    severity: low
+  annotations:
+    a1: v3
+    a2: v4
+spec:
+  type: Repo
+  repoRef: ram-git-cred
+  repoArtifactMeta:
+    git:
+      revision: main
+      repoArtifactFiles:
+      - name: ramrctl-repo.yaml
+        relPath: NameSpace/ramrctl-repo.yaml
+        fileType: K8sYAMLFile
+  resourceQuota:
+    limits.cpu: '10'
+    limits.memory: 20G
+    requests.cpu: '1'
+    requests.memory: 1G
+    fromFileContent: ''
+  limitRange:
+    limits:
+    - type: Pod
+      max:
+        cpu: '2'
+        memory: 1Gi
+      min:
+        cpu: 200m
+        memory: 6Mi
+      maxLimitRequestRatio:
+        cpu: '10'
+        memory: '5'
+    - type: Container
+      max:
+        cpu: '2'
+        memory: 1Gi
+      min:
+        cpu: 100m
+        memory: 4Mi
+      default:
+        cpu: 300m
+        memory: 200Mi
+      defaultRequest:
+        cpu: 200m
+        memory: 100Mi
+      maxLimitRequestRatio:
+        cpu: '10'
+    fromFileContent: ''
+  placement:
+    placementType: ClusterSpecific
+    clusterLabels:
+    - key: rafay.dev/clusterName
+      value: ram-eks5
+    - key: rafay.dev/clusterName
+      value: ram-da3-ubuntu
+
