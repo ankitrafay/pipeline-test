@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: ramrctl-repo
+  name: ns-repo-api
   labels:
     env: dev
     priority: high
@@ -14,7 +14,7 @@ apiVersion: v1
 kind: ResourceQuota
 metadata:
   name: object-counts
-  namespace: ramrctl-repo
+  namespace: ns-repo-api
 spec:
   hard:
     configmaps: "10"
@@ -34,7 +34,7 @@ apiVersion: "v1"
 kind: "LimitRange"
 metadata:
   name: limit-range-sample
-  namespace: ramrctl-repo
+  namespace: ns-repo-api
 spec:
   limits:
     - type: "Pod"
