@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: ram-ns28
+  name: ram-ns29
   labels:
     env: QA
     priority: VeryHigh-new
@@ -16,7 +16,7 @@ apiVersion: v1
 kind: ResourceQuota
 metadata:
   name: object-counts
-  namespace: ram-ns28
+  namespace: ram-ns29
 spec:
   hard:
     configmaps: "10"
@@ -36,7 +36,7 @@ apiVersion: "v1"
 kind: "LimitRange"
 metadata:
   name: limit-range-sample
-  namespace: ram-ns28
+  namespace: ram-ns29
 spec:
   limits:
     - type: "Pod"
