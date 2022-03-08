@@ -3,4 +3,10 @@ kind: Policy
 metadata:
   name: ram-policy
   project: defaultproject
-spec: {}
+spec:
+  constraintList:
+  - name: k8srequiredlabels-constraints
+  installationParams: {}
+  sharing:
+    enabled: false
+  version: v1-k8labels
