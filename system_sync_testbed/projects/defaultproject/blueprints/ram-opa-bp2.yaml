@@ -10,6 +10,6 @@ spec:
     enableMonitoring: false
     enableVM: false
   drift:
-    enabled: false
+    enabled: true
   sharing:
     enabled: false
