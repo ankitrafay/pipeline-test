@@ -1,19 +1,15 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Blueprint
 metadata:
-  name: ram-opa-bp2
+  name: ram-opa-bp3
   project: defaultproject
 spec:
-  base:
-    name: default
-    version: 1.12.0
   defaultAddons:
-    enableIngress: true
-    enableLogging: true
-    enableMonitoring: true
+    enableIngress: false
+    enableLogging: false
+    enableMonitoring: false
     enableVM: false
   drift:
     enabled: false
   sharing:
     enabled: false
-  version: v4-nishanthfix-ram-policy-ns
