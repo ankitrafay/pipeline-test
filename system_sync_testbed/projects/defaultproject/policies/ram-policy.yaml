@@ -6,7 +6,8 @@ metadata:
 spec:
   constraintList:
   - name: k8srequiredlabels-constraints
+  - name: ankit-label-crd
   installationParams: {}
   sharing:
     enabled: false
-  version: v1-k8labels
+  version: v2-crd
