@@ -1,0 +1,14 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: ConstraintTemplate
+metadata:
+  labels:
+    rafay.dev/opa: template
+  name: k8srequiredlabels
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/k8srequiredlabels/k8srequiredlabels_contrainttemplate.yaml
+    options: {}
+    type: Yaml

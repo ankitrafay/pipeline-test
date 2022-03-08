@@ -1,0 +1,17 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: Constraint
+metadata:
+  labels:
+    rafay.dev/opa: constraint
+  name: ankit
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: demo-files/constraints/artifacts/two/gatekeeper-allowedrepos-policy-constraint.yaml
+      repository: ankit-opa
+      revision: main
+    options: {}
+    type: Yaml
+  templateName: ankit

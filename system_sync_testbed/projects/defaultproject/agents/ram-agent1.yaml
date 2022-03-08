@@ -1,0 +1,10 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: ram-agent1
+  project: defaultproject
+spec:
+  active: true
+  cluster:
+    name: ram-ec2-mkd-tb3
+  type: Cluster
