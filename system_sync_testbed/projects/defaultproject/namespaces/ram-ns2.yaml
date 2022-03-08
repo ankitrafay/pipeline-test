@@ -2,7 +2,7 @@ apiVersion: infra.k8smgmt.io/v3
 kind: Namespace
 metadata:
   labels:
-    gt: gatekeeper
+    gatekeeper: ""
   name: ram-ns2
   project: defaultproject
 spec:
