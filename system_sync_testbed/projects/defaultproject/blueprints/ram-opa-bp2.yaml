@@ -8,12 +8,12 @@ spec:
     name: default
     version: 1.12.0
   defaultAddons:
-    enableIngress: false
-    enableLogging: false
-    enableMonitoring: false
+    enableIngress: true
+    enableLogging: true
+    enableMonitoring: true
     enableVM: false
   drift:
     enabled: false
   sharing:
     enabled: false
-  version: v1-opa
+  version: v2-ram-opa
