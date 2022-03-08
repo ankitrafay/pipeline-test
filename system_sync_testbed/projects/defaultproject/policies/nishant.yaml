@@ -1,0 +1,6 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: Policy
+metadata:
+  name: nishant
+  project: defaultproject
+spec: {}
