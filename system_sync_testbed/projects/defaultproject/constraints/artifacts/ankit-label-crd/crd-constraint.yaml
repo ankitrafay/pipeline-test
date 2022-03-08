@@ -5,7 +5,7 @@ metadata:
 spec:
   match:
     kinds:
-      - apiGroups: [""]
+      - apiGroups: ["apiextensions.k8s.io"]
         kinds: ["CustomResourceDefinition"]
   parameters:
     labels: ["gatekeeper"]
