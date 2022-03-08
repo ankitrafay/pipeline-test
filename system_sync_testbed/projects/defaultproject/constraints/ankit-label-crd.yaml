@@ -7,7 +7,9 @@ metadata:
   project: defaultproject
 spec:
   artifact:
-    artifact: {}
+    artifact:
+      paths:
+      - name: file://artifacts/ankit-label-crd/crd-constraint.yaml
     options: {}
     type: Yaml
   templateName: k8srequiredlabels
