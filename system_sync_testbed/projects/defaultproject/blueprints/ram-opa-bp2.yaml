@@ -13,3 +13,4 @@ spec:
     enabled: true
   sharing:
     enabled: false
+  version: v1-opa
