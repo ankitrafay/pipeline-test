@@ -16,4 +16,4 @@ spec:
     enabled: false
   sharing:
     enabled: false
-  version: v3-crsconstraint-correct
+  version: v4
