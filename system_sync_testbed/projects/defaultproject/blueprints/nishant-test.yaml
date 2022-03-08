@@ -4,8 +4,11 @@ metadata:
   name: nishant-test
   project: defaultproject
 spec:
+  base:
+    name: default
+    version: 1.12.0
   defaultAddons:
-    enableIngress: false
+    enableIngress: true
     enableLogging: false
     enableMonitoring: false
     enableVM: false
@@ -13,3 +16,4 @@ spec:
     enabled: false
   sharing:
     enabled: false
+  version: v1
