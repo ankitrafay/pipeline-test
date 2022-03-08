@@ -3,4 +3,14 @@ kind: Namespace
 metadata:
   name: ram-ns1
   project: defaultproject
-spec: {}
+spec:
+  drift:
+    enabled: false
+  limitRange:
+    container: {}
+    pod: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: ram-ec2-mkd-tb3
+  resourceQuotas: {}
