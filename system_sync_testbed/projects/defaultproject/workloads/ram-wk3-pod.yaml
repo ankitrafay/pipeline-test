@@ -1,13 +1,13 @@
 apiVersion: apps.k8smgmt.io/v3
 kind: Workload
 metadata:
-  name: ream-wk2-pod
+  name: ram-wk3-pod
   project: defaultproject
 spec:
   artifact:
     artifact:
       paths:
-      - name: file://artifacts/ream-wk2-pod/ream-wk2-pod.yaml
+      - name: file://artifacts/ram-wk3-pod/ram-wk3-pod.yaml
     options: {}
     type: Yaml
   drift:
@@ -15,4 +15,4 @@ spec:
   namespace: ram-ns3
   placement:
     selector: rafay.dev/clusterName=ram-ec2-mkd-tb3
-  version: ream-wk2-pod-v2
+  version: ram-wk3-pod-v1
