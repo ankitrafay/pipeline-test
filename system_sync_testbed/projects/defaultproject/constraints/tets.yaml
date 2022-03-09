@@ -7,7 +7,11 @@ metadata:
   project: defaultproject
 spec:
   artifact:
-    artifact: {}
+    artifact:
+      paths:
+      - name: library/general/replicalimits/samples/replicalimits/constraint.yaml
+      repository: ram-git-opa
+      revision: master
     options: {}
     type: Yaml
   templateName: ram-replica-constrainttemplate
