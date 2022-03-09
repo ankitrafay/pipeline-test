@@ -4,5 +4,13 @@ metadata:
   name: ram-git-opa
   project: defaultproject
 spec:
+  agents:
+  - {}
+  credentials:
+    password: sealed://credentials.password
+    username: rambhupalchowday
+  endpoint: https://github.com/RamBhupalChowdary/gatekeeper-library.git
   options: {}
+  secret:
+    name: file://artifacts/ram-git-opa/sealed-secret.yaml
   type: Git
