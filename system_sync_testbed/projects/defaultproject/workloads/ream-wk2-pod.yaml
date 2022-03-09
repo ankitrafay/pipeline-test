@@ -5,10 +5,14 @@ metadata:
   project: defaultproject
 spec:
   artifact:
-    artifact: {}
+    artifact:
+      paths:
+      - name: file://artifacts/ream-wk2-pod/ream-wk2-pod.yaml
     options: {}
     type: Yaml
   drift:
     enabled: false
   namespace: ram-ns3
-  placement: {}
+  placement:
+    selector: rafay.dev/clusterName=ram-ec2-mkd-tb3
+  version: ream-wk2-pod-v1

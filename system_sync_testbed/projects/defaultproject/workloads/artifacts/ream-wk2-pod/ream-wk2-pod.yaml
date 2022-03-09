@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-deployment
+  labels:
+    run: nginx-deployment
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    run: nginx-deploy
