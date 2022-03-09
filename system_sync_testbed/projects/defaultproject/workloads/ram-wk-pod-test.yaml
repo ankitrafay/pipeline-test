@@ -15,4 +15,4 @@ spec:
   namespace: ram-ns3
   placement:
     selector: rafay.dev/clusterName=ram-ec2-mkd-tb3
-  version: ram-wk-pod-test-v1
+  version: ram-wk-pod-test-v2
