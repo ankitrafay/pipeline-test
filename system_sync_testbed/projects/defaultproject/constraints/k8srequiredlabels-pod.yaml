@@ -1,0 +1,13 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: Constraint
+metadata:
+  labels:
+    rafay.dev/opa: constraint
+  name: k8srequiredlabels-pod
+  project: defaultproject
+spec:
+  artifact:
+    artifact: {}
+    options: {}
+    type: Yaml
+  templateName: k8srequiredlabels
