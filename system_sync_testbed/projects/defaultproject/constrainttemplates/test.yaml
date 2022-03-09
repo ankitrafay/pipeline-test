@@ -7,6 +7,10 @@ metadata:
   project: defaultproject
 spec:
   artifact:
-    artifact: {}
+    artifact:
+      paths:
+      - name: library/general/replicalimits/template.yaml
+      repository: ram-git-opa
+      revision: master
     options: {}
     type: Yaml
