@@ -1,0 +1,18 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Workload
+metadata:
+  name: ram-wk2-pod
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/ram-wk2-pod/ram-wk2-pod.yaml
+    options: {}
+    type: Yaml
+  drift:
+    enabled: false
+  namespace: ram-ns2
+  placement:
+    selector: rafay.dev/clusterName=ram-ec2-mkd-tb3
+  version: ram-wk2-pod-v1
