@@ -7,7 +7,9 @@ metadata:
   project: defaultproject
 spec:
   artifact:
-    artifact: {}
+    artifact:
+      paths:
+      - name: file://artifacts/ram-0test/k8scontainerlimits_contraints.yaml
     options: {}
     type: Yaml
   templateName: ram-k8scontainerlimits
