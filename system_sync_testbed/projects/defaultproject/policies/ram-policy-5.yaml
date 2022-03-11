@@ -1,0 +1,29 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: Policy
+metadata:
+  name: ram-policy-5
+  project: defaultproject
+spec:
+  constraintList:
+  - name: k8scontainerlimits-constraints
+  - name: k8sreplicalimits-constraint
+  - name: k8srequiredlabels-constraints
+  excludedNamespaces:
+  - namespaces:
+    - name: ram-ns1
+    processes:
+    - '*'
+  installationParams:
+    auditFromCache: true
+    auditInterval: 50
+    constraintViolationsLimit: 30
+  sharing:
+    enabled: true
+    projects:
+    - name: ankit
+    - name: nishant
+  syncObjects:
+  - group: extentions
+    kind: Pod
+    version: v1
+  version: v1-container-replica-labels
