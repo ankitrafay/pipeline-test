@@ -16,4 +16,4 @@ spec:
   namespace: rafay-system
   sharing:
     enabled: false
-  version: opa-template-k8sreplicalimits-v2
+  version: opa-template-k8sreplicalimits-v3
