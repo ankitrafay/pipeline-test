@@ -22,6 +22,4 @@ spec:
     projects:
     - name: ankit
     - name: nishant
-  syncObjects:
-  - {}
-  version: v5-container-replica-labels-5
+  version: v6-container-replica-labels-6
