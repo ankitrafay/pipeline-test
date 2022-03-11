@@ -18,10 +18,7 @@ spec:
     auditInterval: 50
     constraintViolationsLimit: 30
   sharing:
-    enabled: true
-    projects:
-    - name: ankit
-    - name: nishant
+    enabled: false
   syncObjects:
   - group: extentions
     kind: Pod
