@@ -11,11 +11,6 @@ spec:
   excludedNamespaces:
   - namespaces:
     - name: ram-ns1
-    - name: ram-ns2
-    processes:
-    - '*'
-  - namespaces:
-    - name: ram-ns3
     processes:
     - '*'
   installationParams:
@@ -23,9 +18,10 @@ spec:
     auditInterval: 50
     constraintViolationsLimit: 30
   sharing:
-    enabled: false
+    enabled: true
+    projects:
+    - name: ankit
+    - name: nishant
   syncObjects:
-  - group: extension1
-    kind: Pod
-    version: v1
-  version: v4-container-replica-labels-4
+  - {}
+  version: v5-container-replica-labels-5
