@@ -1,0 +1,19 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: Policy
+metadata:
+  name: ram-policy-4
+  project: defaultproject
+spec:
+  constraintList:
+  - name: k8srequiredlabels-constraints
+  - name: ram-k8scontainerlimits-constraints
+  - name: ram-replica-constraint
+  excludedNamespaces:
+  - namespaces:
+    - name: ram-ns2
+    processes:
+    - '*'
+  installationParams: {}
+  sharing:
+    enabled: false
+  version: v1-container-replica-labels
