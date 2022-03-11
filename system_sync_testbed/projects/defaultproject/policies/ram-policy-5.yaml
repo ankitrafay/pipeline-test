@@ -5,10 +5,10 @@ metadata:
   project: defaultproject
 spec:
   constraintList:
-  - name: k8scontainerlimits-constraints
+  - name: k8sreplicalimits-constraint
   excludedNamespaces:
   - namespaces:
-    - name: ram-ns1
+    - name: ram-ns4
     processes:
     - '*'
   installationParams:
@@ -19,4 +19,4 @@ spec:
     projects:
     - name: ankit
     - name: nishant
-  version: v8-container-replica-labels-8
+  version: v9-k8sreplicalimits-9
