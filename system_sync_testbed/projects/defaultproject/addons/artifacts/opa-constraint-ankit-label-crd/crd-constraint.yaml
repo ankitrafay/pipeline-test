@@ -1,0 +1,11 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sRequiredLabels
+metadata:
+  name: ns-must-have-gk3
+spec:
+  match:
+    kinds:
+      - apiGroups: ["apiextensions.k8s.io"]
+        kinds: ["CustomResourceDefinition"]
+  parameters:
+    labels: ["gatekeeper"]

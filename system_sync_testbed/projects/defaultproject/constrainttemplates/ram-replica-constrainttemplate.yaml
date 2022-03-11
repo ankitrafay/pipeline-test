@@ -1,0 +1,16 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: ConstraintTemplate
+metadata:
+  labels:
+    rafay.dev/opa: template
+  name: ram-replica-constrainttemplate
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: library/general/replicalimits/template.yaml
+      repository: ram-git-opa
+      revision: master
+    options: {}
+    type: Yaml

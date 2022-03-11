@@ -1,0 +1,20 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  description: Workload snapshot created for OPA Constraint Template
+  labels:
+    rafay.dev/depends-on: opa-template-ankit
+    rafay.dev/opa: constraint
+  name: opa-constraint-ankit
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/opa-constraint-ankit/demo-files_constraints_artifacts_two_gatekeeper-allowedrepos-policy-constraint.yaml
+    options: {}
+    type: Yaml
+  namespace: rafay-system
+  sharing:
+    enabled: false
+  version: opa-constraint-ankit-v1
