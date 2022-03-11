@@ -1,0 +1,16 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: ram-addon-httpd
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/ram-addon-httpd/httpd-deployment.yaml
+    options: {}
+    type: Yaml
+  namespace: ram-ns2
+  sharing:
+    enabled: false
+  version: v1-httpd
