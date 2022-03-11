@@ -13,4 +13,6 @@ spec:
     labels:
     - key: rafay.dev/clusterName
       value: ram-ec2-mkd-tb3
+    - key: rafay.dev/clusterName
+      value: ram-ec2-tb4
   resourceQuotas: {}
