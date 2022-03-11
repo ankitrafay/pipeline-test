@@ -1,0 +1,17 @@
+apiVersion: opa.k8smgmt.io/v3
+kind: Constraint
+metadata:
+  labels:
+    rafay.dev/opa: constraint
+  name: k8sreplicalimits-constraint
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: library/general/replicalimits/samples/replicalimits/constraint.yaml
+      repository: ram-git-opa
+      revision: master
+    options: {}
+    type: Yaml
+  templateName: k8sreplicalimits
