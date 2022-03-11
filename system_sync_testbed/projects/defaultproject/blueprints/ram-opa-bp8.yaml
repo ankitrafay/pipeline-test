@@ -16,4 +16,4 @@ spec:
     enabled: false
   sharing:
     enabled: false
-  version: v1-containerlimits
+  version: v2-k8replicalimits
