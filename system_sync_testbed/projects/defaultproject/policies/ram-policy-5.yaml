@@ -11,6 +11,7 @@ spec:
   excludedNamespaces:
   - namespaces:
     - name: ram-ns1
+    - name: ram-ns2
     processes:
     - '*'
   installationParams:
@@ -26,4 +27,4 @@ spec:
   - group: extension1
     kind: Pod
     version: v1
-  version: v1-container-replica-labels-1
+  version: v2-container-replica-labels-2
