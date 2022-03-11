@@ -18,9 +18,12 @@ spec:
     auditInterval: 50
     constraintViolationsLimit: 30
   sharing:
-    enabled: false
+    enabled: true
+    projects:
+    - name: ankit
+    - name: nishant
   syncObjects:
-  - group: extentions
+  - group: extension1
     kind: Pod
     version: v1
-  version: v1-container-replica-labels
+  version: v1-container-replica-labels-1
