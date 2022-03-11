@@ -14,6 +14,10 @@ spec:
     - name: ram-ns2
     processes:
     - '*'
+  - namespaces:
+    - name: ram-ns3
+    processes:
+    - '*'
   installationParams:
     auditFromCache: true
     auditInterval: 50
@@ -24,4 +28,4 @@ spec:
   - group: extension1
     kind: Pod
     version: v1
-  version: v3-container-replica-labels-3
+  version: v4-container-replica-labels-4
