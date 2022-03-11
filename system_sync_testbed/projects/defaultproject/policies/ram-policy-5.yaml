@@ -22,4 +22,4 @@ spec:
     projects:
     - name: ankit
     - name: nishant
-  version: v6-container-replica-labels-6
+  version: v7-container-replica-labels-7
