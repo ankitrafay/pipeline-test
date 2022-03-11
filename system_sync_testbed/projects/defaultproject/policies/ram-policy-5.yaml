@@ -19,8 +19,4 @@ spec:
     projects:
     - name: ankit
     - name: nishant
-  syncObjects:
-  - group: extension
-    kind: Pod
-    version: v1
-  version: v7-container-replica-labels-7
+  version: v8-container-replica-labels-8
