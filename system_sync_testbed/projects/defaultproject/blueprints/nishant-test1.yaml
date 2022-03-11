@@ -15,5 +15,8 @@ spec:
   drift:
     enabled: false
   sharing:
-    enabled: false
+    enabled: true
+    projects:
+    - name: ankit
+    - name: nishant
   version: v1
