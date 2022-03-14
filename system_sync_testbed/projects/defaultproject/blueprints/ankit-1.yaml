@@ -17,7 +17,7 @@ spec:
   opaPolicy:
     enabled: true
     name: ram-policy
-    version: v3-pod
+    version: v2-crd
   sharing:
     enabled: false
-  version: v1
+  version: v2
