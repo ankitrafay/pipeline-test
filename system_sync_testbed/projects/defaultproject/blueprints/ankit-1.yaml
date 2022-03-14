@@ -1,0 +1,16 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Blueprint
+metadata:
+  name: ankit-1
+  project: defaultproject
+spec:
+  defaultAddons:
+    enableIngress: false
+    enableLogging: false
+    enableMonitoring: false
+    enableVM: false
+  drift:
+    enabled: false
+  opaPolicy: {}
+  sharing:
+    enabled: false
